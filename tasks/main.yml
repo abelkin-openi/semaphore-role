@@ -1,0 +1,10 @@
+- name: Install the haproxy-package
+  become: true
+  ansible.builtin.apt:
+    name: "haproxy"
+    state: "present"
+
+- name: Run hostname
+  ansible.builtin.command: hostname
+  changed_when: false
+
