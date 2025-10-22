@@ -1,5 +1,5 @@
+---
 - name: Install the haproxy-package
-  become: true
   ansible.builtin.apt:
     name: "haproxy"
     state: "present"
